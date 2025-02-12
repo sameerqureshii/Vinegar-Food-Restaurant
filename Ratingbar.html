@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/ratingbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="wow" >
+  <div id="blur">
+  <header>
+    <input type="checkbox" id="check">
+  <nav>
+    <div class="icon"><b class="bolder">Vinegar</b> <b class="bold">Food</b></div>
+    <div class="search_box" >
+      <input type="search" placeholder="Search here..." name="search">
+      <button class="search-btn" type="button" name="button" data-tooltip="Search">
+      <span class="fa fa-search"></span>
+    </div>
+    <ul>
+      <li id="underline"><a href="Home.html">Home</a></li>
+      <li id="underline" class="drop-btn"><a href="#">Meals<span class="fa fa-caret-down"></span></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="Meals.html #regular">Regular</a></li>
+            <li><a href="Meals.html #lunch">Lunch</a></li>
+            <li><a href="Meals.html #snacks">Snacks</a></li>
+            <li><a href="Meals.html #desserts">Desserts</a></li>
+            <li><a href="Meals.html #beverages">Beverages</a></li>
+            <li><a href="Catering.html">• Catering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li id="underline"><a href="Gallery.html">Gallery</a></li>
+      <li id="underline"><a href="Award.html">Awards</a></li>
+      <li id="underline"><a href="Recipe of the month.html">Recipe</a></li>
+      <li id="underline" class="drop-button active"><a href="#">Settings<span class="fa fa-caret-down"></span></a>
+
+        <div class="dropdown-menuu">
+          <ul>
+            <li class="activee"><a href="Ratingbar.html">Feedback</a></li>
+            <li><a id="toggle"  href="#">Dark Mode</a></li>
+            <li><a href="Contact us.html">Contact</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="registerbox.html">Registration</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <label for="check" class="bar">
+      <span class="fa fa-bars" id="bars"></span>
+      <span class="fa fa-times" id="times"></span>
+    </label>
+  </nav></header>
+
+  <div class="wrap" id="blur">
+    <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <div class="container" id="blur">
+        <div id="feedback-wrapper blur" class="feedback">
+            <h2 class="feedback-title">Website RatingBar</h2>
+            <p class="feedback-para">Your Feedback Is Important For Us, It Help Us To Improve More!!!</p>
+            <div class="rating">
+                <input type="radio" name="rating" id="rating-5">
+                <label for="rating-5"><i class="fas fa-star"></i></label>
+
+                <input type="radio" name="rating" id="rating-4">
+                <label for="rating-4"><i class="fas fa-star"></i></label>
+
+                <input type="radio" name="rating" id="rating-3">
+                <label for="rating-3"><i class="fas fa-star"></i></label>
+
+                <input type="radio" name="rating" id="rating-2">
+                <label for="rating-2"><i class="fas fa-star"></i></label>
+
+                <input type="radio" name="rating" id="rating-1">
+                <label for="rating-1"><i class="fas fa-star"></i></label>
+            </div>
+            <form action="#" >
+                <header></header>
+                <div class="textarea">
+                  <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                </div>
+            <button class="button" id="open-popup-btn" onclick="toggle()" type="submit" >Submit</button>
+        </div>
+    </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="div1">
+            <div class="div2">
+                <div class="footer-col">
+                    <h4>Vinegar Foods</h4>
+                    <ul>
+                      <li><a href="Home.html" class="b">Home</a></li>
+                      <li><a href="Meals.html" class="b">Meals</a></li>
+                      <li><a href="Gallery.html" class="b">Gallery</a></li>
+                      <li><a href="Award.html" class="b">Awards</a></li>
+                      <li><a href="Recipe of the month.html" class="b">Recipe</a></li>
+                      <li><a href="Catering.html" class="b">Catering</a></li>               
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                      <li><a href="#" class="a">Fast Food</a></li>
+                      <li><a href="#" class="a">Good Menu</a></li>
+                      <li><a href="#" class="a">Comfortable </a></li>
+                      <li><a href="#" class="a">Healthy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                      <li><a href="Ratingbar.html" class="b">Feedback</a></li>
+                      <li><a href="Contact us.html" class="b">Contact Us</a></li>
+                      <li><a href="Login.html" class="b">Login</a></li>
+                      <li><a href="registerbox.html" class="b">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.wikipedia.org/" class="wikipedia"><i class="fab fa-wikipedia-w"></i></a><br>
+                        <a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin"></i></a><br>
+                        <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a>
+    
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All Right reserved by &copy;conceptial 2021</p>
+            </div>
+        </div>
+      </footer>
+    </div>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  
+    <script>
+      function scrollTop(){
+      const scrollTop = document.getElementById('scroll-top');
+      if(this.scrollY >= 30) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+  }
+  window.addEventListener('scroll', scrollTop)
+    </script>
+
+    <div class="popup center">
+      <div class="icon">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="title">
+        Thanks for feedback!!
+      </div>
+      <div class="dismiss-btn">
+        <button id="dismiss-popup-btn" onclick="toggle()">
+          OK
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("open-popup-btn").addEventListener("click",function(){
+document.getElementsByClassName("popup")[0].classList.add("active");
+});
+
+document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+document.getElementsByClassName("popup")[0].classList.remove("active");
+});
+
+function toggle() {
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+  </script>
+
+    <script>
+      const drop_btn = document.querySelector(".drop-btn span");
+      const menu = document.querySelector(".dropdown-menu");
+      const menu_bar = document.querySelector(".menu-bar");
+      drop_btn.onclick = () => {
+          menu.classList.toggle('show');
+          menu_bar.classList.toggle('show');
+      };
+  
+      const drop_button = document.querySelector(".drop-button span");
+      const menuu = document.querySelector(".dropdown-menuu");
+      const menu_barr = document.querySelector(".menu-barr");
+      drop_button.onclick = () => {
+          menuu.classList.toggle('show');
+          menu_barr.classList.toggle('show');
+      };
+  </script>
+  
+    <script>
+      var content = document.getElementsByTagName('body')[0];
+  const wow = document.querySelector('.wow');
+  const toggle = document.querySelector('#toggle');
+  toggle.onclick = function(){
+      wow.classList.toggle('dark');
+      content.classList.toggle('night');
+  }
+  </script>
+  
+</body>
+</html>

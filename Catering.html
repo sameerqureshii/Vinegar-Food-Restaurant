@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navigation Menu with Search Bar</title>
+  <link rel="stylesheet" type="text/css" href="css/Catering.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.min.js" 
+  integrity="sha512-xTXLkWCanTzPE4g+vyMXdJ1MYKwuhdJqxNfPDE8sHnwwHBXTZY0VNWBiCRiDtGEtLzmLkK5GCSXshPCP2kt8Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+  integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="wow">
+  <header>
+    <input type="checkbox" id="check">
+  <nav>
+    <div class="icon"><b class="bolder">Vinegar</b> <b class="bold">Food</b></div>
+    <div class="search_box">
+      <input type="search" placeholder="Search here..." name="search">
+      <button class="search-btn" type="button" name="button" data-tooltip="Search">
+      <span class="fa fa-search"></span>
+    </div>
+    <ul>
+      <li id="underline"><a href="Home.html">Home</a></li>
+      <li id="underline" class="drop-btn active"><a href="#">Meals<span class="fa fa-caret-down"></span></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="Meals.html #regular">Regular</a></li>
+            <li><a href="Meals.html #lunch">Lunch</a></li>
+            <li><a href="Meals.html #snacks">Snacks</a></li>
+            <li><a href="Meals.html #desserts">Desserts</a></li>
+            <li><a href="Meals.html #beverages">Beverages</a></li>
+            <li class="activee"><a href="Catering.html">• Catering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li id="underline"><a href="Gallery.html">Gallery</a></li>
+      <li id="underline"><a href="Award.html">Awards</a></li>
+      <li id="underline"><a href="Recipe of the month.html">Recipe</a></li>
+      <li id="underline" class="drop-button"><a href="#">Settings<span class="fa fa-caret-down"></span></a>
+
+        <div class="dropdown-menuu">
+          <ul>
+            <li><a href="Ratingbar.html">Feedback</a></li>
+            <li><a id="toggle"  href="#">Dark Mode</a></li>
+            <li><a href="Contact us.html">Contact</a></li>
+            <li><a href="Login.html">Sign In</a></li>
+            <li><a href="registerbox.html">Registration</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <label for="check" class="bar">
+      <span class="fa fa-bars" id="bars"></span>
+      <span class="fa fa-times" id="times"></span>
+    </label>
+  </nav></header>
+
+ <div class="catering-design">
+   <h1 class="catering">Catering</h1>
+ </div>
+
+ <div class="main center">
+  <div class="card">
+    <img src="images/dish-1.png">
+    <h1>Catering</h1>
+    <h2>Services</h2>
+    <div class="icon">
+<b><pre>Catering is the business of providing 
+food service at a remote site or a site 
+such as a hotel, hospital, aircraft, park,
+filming site or studio, entertainment 
+site, or event venue. Catering Services
+means an establishment in which the
+principal use is the preparation of food
+and meals on the premises, and where 
+such food and meals are delivered to
+another location for consumption.</pre></b>
+    </div>
+</div>
+ </div>
+
+ <section class="order" id="order">
+
+  <h3 class="sub-heading"> order now </h3>
+
+  <form action="">
+
+      <div class="inputBox">
+          <div class="input">
+              <span>your name</span>
+              <input type="text" placeholder="enter your name">
+          </div>
+          <div class="input">
+              <span>your number</span>
+              <input type="number" placeholder="enter your number">
+          </div>
+      </div>
+      <div class="inputBox">
+          <div class="input">
+              <span>your order</span>
+              <input type="text" placeholder="enter food name">
+          </div>
+          <div class="input">
+              <span>additional food</span>
+              <input type="test" placeholder="extra with food">
+          </div>
+      </div>
+      <div class="inputBox">
+          <div class="input">
+              <span>how much</span>
+              <input type="number" placeholder="how many orders">
+          </div>
+          <div class="input">
+              <span>date and time</span>
+              <input type="datetime-local">
+          </div>
+      </div>
+      <div class="inputBox">
+          <div class="input">
+              <span>your address</span>
+              <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input">
+              <span>your message</span>
+              <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+          </div>
+      </div>
+
+      <input type="reset" value="order now" class="btn" onclick="alert('Thanks for order your order will deliver in just 20 mins')">
+
+  </form>
+
+</section>
+
+  <footer class="footer">
+    <div class="div1">
+        <div class="div2">
+            <div class="footer-col">
+                <h4>Vinegar Foods</h4>
+                    <ul>
+                      <li><a href="Home.html" class="b">Home</a></li>
+                      <li><a href="Meals.html" class="b">Meals</a></li>
+                      <li><a href="Gallery.html" class="b">Gallery</a></li>
+                      <li><a href="Award.html" class="b">Awards</a></li>
+                      <li><a href="Recipe of the month.html" class="b">Recipe</a></li>
+                      <li><a href="Catering.html" class="b">Catering</a></li>               
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                  <li><a href="#" class="a">Fast Food</a></li>
+                  <li><a href="#" class="a">Good Menu</a></li>
+                  <li><a href="#" class="a">Comfortable </a></li>
+                  <li><a href="#" class="a">Healthy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="Ratingbar.html" class="b">Feedback</a></li>
+                  <li><a href="Contact us.html" class="b">Contact Us</a></li>
+                  <li><a href="Login.html" class="b">Login</a></li>
+                  <li><a href="registerbox.html" class="b">Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" class="facebook" ><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.wikipedia.org/" class="wikipedia" ><i class="fab fa-wikipedia-w"></i></a><br>
+                    <a href="https://www.instagram.com/" class="instagram" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="linkedin" ><i class="fab fa-linkedin"></i></a><br>
+                    <a href="https://twitter.com/" class="twitter" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" class="youtube" ><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All Right reserved by &copy;conceptial 2021</p>
+        </div>
+    </div>
+</footer>
+  </div>
+
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
+  <script>
+    function scrollTop(){
+    const scrollTop = document.getElementById('scroll-top');
+    if(this.scrollY >= 150) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollTop)
+  </script>
+
+  <script>
+    const drop_btn = document.querySelector(".drop-btn span");
+    const menu = document.querySelector(".dropdown-menu");
+    const menu_bar = document.querySelector(".menu-bar");
+    drop_btn.onclick = () => {
+        menu.classList.toggle('show');
+        menu_bar.classList.toggle('show');
+    };
+
+    const drop_button = document.querySelector(".drop-button span");
+    const menuu = document.querySelector(".dropdown-menuu");
+    const menu_barr = document.querySelector(".menu-barr");
+    drop_button.onclick = () => {
+        menuu.classList.toggle('show');
+        menu_barr.classList.toggle('show');
+    };
+</script>
+
+  <script>
+    var content = document.getElementsByTagName('body')[0];
+const wow = document.querySelector('.wow');
+const toggle = document.querySelector('#toggle');
+toggle.onclick = function(){
+    wow.classList.toggle('dark');
+    content.classList.toggle('night');
+}
+</script>
+
+
+
+</body>
+</html>
